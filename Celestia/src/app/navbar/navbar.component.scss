@@ -1,0 +1,111 @@
+@import '../../../styles/variableColors.scss';
+
+nav{
+  display: flex;
+  width: 100%;
+  padding: 0.5rem;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1290px;
+  gap: 1rem;
+  justify-content: space-between;
+  img{
+    margin-top: 0.4rem;
+  }
+}
+
+.userIcon{
+  color: $white-100;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    mat-icon {
+      font-size: 24px;
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin-left: 2rem;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 3rem;
+  a{
+    color: $white-100;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  input{
+    position: absolute;
+    width: 20rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    color: $white-100;
+    font-weight: 300;
+    font-size: 14px;
+  }
+  input:focus {
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+}
+
+.searchIcon {
+  position: relative;
+  left: 9.5rem;
+  bottom: 3px;
+  width: 13px;
+  height: 13px;
+  display: block;
+}
+
+.loginButton{
+  cursor: pointer;
+  text-decoration: none;
+  color: $white-100;
+  font-weight: 300;
+}
+
+.loginButton p {
+  padding: 0.3rem 2rem;
+  border-radius: 20px;
+  background: linear-gradient(to right, #8E2DE2, #4A00E0);
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  transition: transform 0.3s ease
+}
+
+.loginButton p:hover {
+  transform: translateY(-5px); /* Move o botão para cima */
+}
+

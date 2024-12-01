@@ -1,0 +1,25 @@
+<body>
+  <div class="navBarContainer">
+    <app-navbar></app-navbar>
+  </div>
+  <section>
+    <div class="videoContainer">
+      <video width="800" controls>
+        <source [src]="video.url" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+      </video>
+    </div>
+    <div>
+      <div>
+        <p>{{ video.title }}</p>
+        <p>{{ video.description}}</p>
+      </div>
+      <ul>
+        <li><img src="/assets/icons/likeIcon.svg" alt=""><p>favorite</p></li>
+        <li><img src="/assets/icons/eyeIcon.svg" alt=""><p>{{video.views}}</p></li>
+        <li><img src="/assets/icons/saveItemIcon.svg" alt=""><p>watch later</p></li>
+        <li><img src="/assets/icons/calendarIcon.svg" alt=""><p>{{video.uploadedAt}}</p></li>
+      </ul>
+    </div>
+  </section>
+</body>

@@ -1,1 +1,34 @@
-<p>navbar works!</p>
+<div class="logo">
+  <a href=""><img src="/assets/img/logoCelestia.svg" alt="CelestiaLogo"></a>
+</div>
+
+<nav>
+  <ul>
+    <li>
+      <a href="">Home</a>
+    </li>
+    <li>
+      <a href="">Favorites</a>
+    </li>
+  </ul>
+  <div class="searchBox">
+    <input type="text" name="" id="" (input)="onSearchInput($event)">
+    <img src="/assets/icons/searchIcon.svg" alt="searchIconSvg" class="searchIcon">
+  </div>
+  <div>
+    <ng-container *ngIf="isLoggedIn; else loginButton">
+      <div class="userIcon">
+        <span>{{ userName }}</span>
+        <button mat-button [matMenuTriggerFor]="menu"><img src="/assets/icons/userIcon.svg" alt="User Icon"></button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item (click)="logout()">Logout</button>
+        </mat-menu>
+      </div>
+    </ng-container>
+    <ng-template #loginButton>
+      <a (click)="navigateToLogin()" class="loginButton">
+        <p>Log in</p>
+      </a>
+    </ng-template>
+  </div>
+</nav>

@@ -1,0 +1,141 @@
+@import '../../../styles/variableColors.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-family: "Poppins", serif;
+  color: $white-100;
+  font-weight: 600;
+  font-size: 48px;
+}
+
+p, label,  input {
+  font-family: "Poppins", serif;
+  color: $white-100;
+  font-size: 14px;
+}
+
+.containerGrid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  background-color: #1D1D1D;
+  overflow: hidden !important;
+  position: relative;
+}
+
+.containerImgLogin img{
+  width: 100%;
+  height: 100%;
+}
+
+.containerImgLogin {
+  display: block;
+  box-sizing: border-box;
+  width: 688px;
+  height: 850px;
+}
+
+.element3d{
+  position: absolute;
+  top: -10;
+}
+
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.formGlass{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.24);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  height: 477px;
+  width: 413px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.inputBlock{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  margin-left: 0.3rem;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  input {
+    background-color: transparent;
+    width: 298px;
+    padding: 0.5rem 2.5rem 0.5rem 1rem;
+    border: 2px solid white;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+  }
+
+  input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  .inputIcon {
+    position: absolute;
+    right: 12px; 
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+  }
+}
+
+.buttonContainer{
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.loginTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  padding: 3rem;
+}
+
+.buttonContainer button img{
+  width: 250px;
+}

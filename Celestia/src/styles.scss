@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+html{
+  background-color: #0C0819;
+}
+
+.mat-mdc-menu-content {
+  padding: 0 !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0C0819;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2e1f5f;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

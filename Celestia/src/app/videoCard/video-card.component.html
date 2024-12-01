@@ -1,0 +1,15 @@
+<div class="videoContainer">
+  <img [src]="thumbnail" alt="{{ title }}" class="thumbnail" (click)="onSelectVideo()">
+  <div class="infoContainer">
+    <section class="textInfo">
+      <p class="title">{{ title }}</p>
+      <div class="eyeCountVideo">
+        <img src="/assets/icons/eyeIcon.svg" alt="Views Icon">
+        <p>{{ formatViews(views) }}</p>
+      </div>
+    </section>
+    <section class="descriptionContainer">
+      <p>{{ truncateDescription(description, 50) }}</p>
+    </section>
+  </div>
+</div>

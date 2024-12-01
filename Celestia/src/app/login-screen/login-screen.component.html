@@ -1,0 +1,45 @@
+<div class="containerGrid">
+  <!-- Imagem de fundo -->
+  <div class="containerImgLogin">
+    <img src="/assets/img/imgLoginScreen.png" alt="Login Background">
+  </div>
+
+  <!-- Formulário de login -->
+  <div class="loginContainer">
+    <img class="element3d" src="/assets/img/element3d.svg" alt="Elemento decorativo 3D">
+    <section class="loginTitle">
+      <h1>Login</h1>
+    </section>
+
+    <form class="formGlass">
+      <div class="inputBlock">
+
+        <div class="inputContainer">
+          <label for="email">email</label>
+          <div class="inputWrapper">
+            <img src="/assets/icons/emailIcon.svg" alt="Ícone de email" class="inputIcon">
+            <input type="email" id="email" placeholder="Digite seu email">
+          </div>
+        </div>
+      
+        <div class="inputContainer">
+          <label for="password">password</label>
+          <div class="inputWrapper">
+            <img src="/assets/icons/lockerIcon.svg" alt="Ícone de senha" class="inputIcon">
+            <input type="password" id="password" placeholder="Digite sua senha">
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="buttonContainer">
+        <button type="button" aria-label="Login com Google" (click)="loginWithGoogle()">
+          <img src="/assets/img/googleLogin.svg" alt="Login com Google">
+        </button>
+        <button type="button" aria-label="Login com Facebook" (click)="loginWithFacebook()">
+          <img src="/assets/img/facebookLogin.svg" alt="Login com Facebook">
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

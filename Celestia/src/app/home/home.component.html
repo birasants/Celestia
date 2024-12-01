@@ -1,0 +1,20 @@
+<body>
+  <div class="navBarContainer">
+    <app-navbar></app-navbar>
+  </div>
+  <section>
+    <div>
+      <app-slogan [text]="slogan"></app-slogan>
+    </div>
+    <div class="gridContainer">
+      <app-video-card
+        *ngFor="let video of filteredVideos"
+        [title]="video.title"
+        [description]="video.description"
+        [thumbnail]="video.thumbnail"
+        [url]="video.url"
+        [views]="video.views">
+      </app-video-card>
+    </div>
+  </section>
+</body>
